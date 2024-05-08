@@ -17,7 +17,7 @@
                 <menuitem class="nav-menu-item"><a href="#">Gallery</a></menuitem>
                 <menuitem class="nav-menu-item"><a href="#">About Me</a></menuitem>
             </menu>
-            <button id="nav-menu-contact-btn">Contact Me</button>
+            <button id="nav-menu-contact-btn" class="contact-me-btn">Contact Me</button>
         </nav>
 
     </header>
@@ -29,7 +29,7 @@
                 <p id="text-1-section-1">Hello &#128075</p>
                 <p id="text-2-section-1">I'm <span>Aashish Kumar</span></p>
                 <p id="text-3-section-1">I am providing Sketching, pencil color drawing and specialist in face.</p>
-                <button>Contact Me</button>
+                <button class="contact-me-btn">Contact Me</button>
             </section>
 
             <section id="section-1-content-2" class="section-1-content">
@@ -86,7 +86,7 @@
                 <div id="section-3-content-2-text-3"><p>We will create an outstanding sketch for you that makes you happy.</p></div>
                 <div id="section-3-content-2-text-4"><p>We will assure you that will love our services.</p></div>
                 <div id="section-3-content-2-text-5"><p>Get in touch with us.</p></div>
-                <button>Contact Now</button>
+                <button class="contact-me-btn">Contact Now</button>
             </div>
 
         </div>
@@ -117,7 +117,7 @@
                 <img src="Assets/image 1.png" alt="">
                 <div id="section-6-content-2-1">
                     <p>Web hosting is a service that allows individuals and organizations to make their websites accessible on the internet. It involves storing website files, databases, and other resources on a server that is connected to the internet 24/7. Web hosting providers offer various hosting plans to cater to different needs, ranging from shared hosting, where multiple websites share server resources, to more advanced options like virtual private servers (VPS) and dedicated servers.</p>
-                    <button>Contact Me</button>
+                    <button class="contact-me-btn">Contact Me</button>
                 </div>
             </div>
 
@@ -176,33 +176,44 @@
 
             <div id="footer-section-1-content-2">
                 <menu id="footer-nav-menu">
-                    <menuitem class="footer-nav-menu-item"><a href="#">Home</a></menuitem>
-                    <menuitem class="footer-nav-menu-item"><a href="#">Services</a></menuitem>
-                    <menuitem class="footer-nav-menu-item"><a href="#">Contact Us</a></menuitem>
-                    <menuitem class="footer-nav-menu-item"><a href="#">Gallery</a></menuitem>
-                    <menuitem class="footer-nav-menu-item"><a href="#">Create own website</a></menuitem>
-                    <menuitem class="footer-nav-menu-item"><a href="#">About Me</a></menuitem>
-                    <menuitem class="footer-nav-menu-item"><a href="#">Follow Us on</a></menuitem>
 
-                    <menuitem class="footer-nav-menu-item" id="social-handle-container">
-                    <a href="https://linkedin.com/"><img src="Assets/linkedin.png" alt="linkedin icon"></a>
-                    <a href="https://www.facebook.com/"><img src="Assets/facebook icon.png" alt="facebook icon"></a>
-                    <a href="https://twitter.com/"><img src="Assets/twitter.png" alt="twitter icon"></a>
-                    <a href="https://www.instagram.com/"><img src="Assets/instagram icon.png" alt="instagram icon"></a>
-                    </menuitem>
+                    <section id="footer-nav-menu-sec-1">
+                     <menuitem class="footer-nav-menu-item"><a href="#">Home</a></menuitem>
+                     <menuitem class="footer-nav-menu-item"><a href="#">Services</a></menuitem>
+                     <menuitem class="footer-nav-menu-item"><a href="#">Contact Us</a></menuitem>
+                     <menuitem class="footer-nav-menu-item"><a href="#">Gallery</a></menuitem>
+                   </section>
+
+                    <section id="footer-nav-menu-sec-2">
+                      <menuitem class="footer-nav-menu-item"><a href="#">Create own website</a></menuitem>
+                      <menuitem class="footer-nav-menu-item"><a href="#">About Me</a></menuitem>
+                      <menuitem class="footer-nav-menu-item"><a href="#">Follow Us on</a></menuitem>
+
+                      <menuitem class="footer-nav-menu-item" id="social-handle-container">
+                      <a href="https://linkedin.com/"><img src="Assets/linkedin.png" alt="linkedin icon"></a>
+                      <a href="https://www.facebook.com/"><img src="Assets/facebook icon.png" alt="facebook icon"></a>
+                      <a href="https://twitter.com/"><img src="Assets/twitter.png" alt="twitter icon"></a>
+                      <a href="https://www.instagram.com/"><img src="Assets/instagram icon.png" alt="instagram icon"></a>
+                      </menuitem>
+                    </section>
                 </menu>
 
             </div>
-
             <div id="footer-section-content-3"><p>^</p></div>
 
         </section>
 
         <section id="footer-section-2" class="footer-main-container">
-            &#169; 2024 <span>Techies Gateway.</span> All Rights Reserved.
+            &#169; <span id="year"></span> <span>Techies Gateway.</span> All Rights Reserved.
         </section>
 
     </footer>
+    <script>
+        alert("Thanks for visiting my website");
+        var date = new Date().getFullYear()
+        document.querySelector("#year").innerHTML=date;
+        console.log(date)
+    </script>
     
 </body>
 </html>
