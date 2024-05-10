@@ -637,7 +637,7 @@
                                                             /* Responsive Session -default:Laptop or desktop */
     
                                                              /* Breakpoints:Mobile Devices (320px - 480px)  */
-    @media (min-width:320px) and (max-width:480px){
+    @media only screen  and (max-width:800px){
     
                                                 /* nav section */
     nav img{
@@ -973,10 +973,6 @@
     
     #footer-section-2 span{
         font-weight:500;
-    }
-    
-        
-                                    
-                                                
+    }                                          
                                                       
     }
